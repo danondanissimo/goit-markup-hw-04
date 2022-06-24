@@ -438,6 +438,34 @@ section {
   color: var(--accent);
 }
 
+/* Соцсети */
+
+.social-networks-list {
+  display: flex;
+}
+
+.social-network {
+  justify-content: center;
+}
+
+.social-network-link {
+  color: var(--primary-icon-color);
+}
+
+.social-network-link:visited {
+  color: var(--primary-icon-color);
+}
+
+.social-network-link:hover {
+  color: var(--accent);
+}
+
+.social-network-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
 /* Портфолио */
 
 .project-buttons {
