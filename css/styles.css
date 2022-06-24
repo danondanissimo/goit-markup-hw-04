@@ -8,6 +8,7 @@
   --accent-secondary: #ffffff;
   --additional-accent: #188ce8;
   --logo-secondary: #000000;
+  --primary-icon-color: #afb1b8;
   --footer-contacts: rgba(255, 255, 255, 0.6);
 }
 
@@ -163,13 +164,13 @@ section {
   height: 12px;
   width: 16px;
 
-  outline: 1px solid black;
+  /* outline: 1px solid black; */
 }
 
 .phone-icon {
   height: 16px;
   width: 10px;
-  outline: 1px solid black;
+  /* outline: 1px solid black; */
 }
 
 /* .contacts.link::before {
@@ -269,8 +270,12 @@ section {
   margin-right: 30px;
 }
 
+.feature-list-item {
+  width: 270px;
+  margin: 15px;
+}
+
 .feature-title {
-  margin-top: 30px;
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
@@ -289,12 +294,14 @@ section {
   margin: -15px;
 }
 
-.feature-list-item {
+.feature-icon {
   width: 270px;
-  margin: 15px;
+  height: 120px;
+  margin-bottom: 30px;
+  fill: var(--primary-icon-color);
 }
 
-.feature-list-item::before {
+/* .feature-list-item::before {
   content: '';
   display: block;
   height: 120px;
@@ -302,13 +309,13 @@ section {
   background-repeat: no-repeat;
   background-size: contain;
   background-color: var(--secondary-background-color);
-}
+} */
 
-.feature-list-item.icon-satellite::before {
+/* .feature-list-item.icon-satellite::before {
   background-image: url(./css-images/satellite.png);
-}
+} */
 
-.feature-list-item.icon-wall-clock::before {
+/* .feature-list-item.icon-wall-clock::before {
   background-image: url(./css-images/wall-clock.png);
 }
 
@@ -318,7 +325,7 @@ section {
 
 .feature-list-item.icon-astronaut::before {
   background-image: url(./css-images/astronaut.png);
-}
+} */
 
 .section-team {
   background-color: var(--secondary-background-color);
@@ -358,6 +365,37 @@ section {
   text-align: Center;
 }
 
+.client-list {
+  display: flex;
+}
+
+.client-list-item {
+  fill: currentColor;
+}
+
+.client-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.client-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 92px;
+  width: 170px;
+  border: 1px solid var(--primary-icon-color);
+  border-radius: 4px;
+  color: var(--primary-icon-color);
+}
+
+.client-link:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.client-list-item .icon {
+  margin: 0;
+}
 /* Футер */
 
 .footer {
