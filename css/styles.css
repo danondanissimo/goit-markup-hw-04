@@ -448,6 +448,10 @@ section {
   justify-content: center;
 }
 
+.social-network:not(:last-child) {
+  margin-right: 10px;
+}
+
 .social-network-link {
   color: var(--primary-icon-color);
 }
@@ -461,8 +465,12 @@ section {
 }
 
 .social-network-icon {
+  text-decoration: none;
   width: 20px;
   height: 20px;
+  background-color: var(--primary-background-color);
+  background-size: contain;
+  border-radius: 22px;
   fill: currentColor;
 }
 
