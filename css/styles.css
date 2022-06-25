@@ -365,6 +365,51 @@ section {
   text-align: Center;
 }
 
+/* Соцсети */
+
+.social-networks-list {
+  display: flex;
+  list-style: none;
+  height: 44px;
+  width: 206px;
+  padding: 0;
+  margin: 16px 32px 30px 32px;
+}
+
+.social-network:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-network-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--accent-secondary);
+  height: 44px;
+  width: 44px;
+  background-size: contain;
+  border-radius: 22px;
+}
+
+.social-network-link:visited {
+  color: var(--primary-icon-color);
+}
+
+.social-network-link:hover,
+.social-network-link:focus {
+  color: var(--accent-secondary);
+  background-color: var(--accent);
+}
+
+.social-network-icon {
+  /* background-color: var(--primary-background-color); */
+  height: 20px;
+  width: 20px;
+  fill: currentColor;
+}
+
+/* Клиенты */
+
 .client-list {
   display: flex;
 }
@@ -388,7 +433,8 @@ section {
   color: var(--primary-icon-color);
 }
 
-.client-link:hover {
+.client-link:hover,
+.client-link:focus {
   color: var(--accent);
   border-color: var(--accent);
 }
@@ -402,6 +448,13 @@ section {
   background-color: var(--additional-background-color);
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  width: 507px;
+  align-items: baseline;
 }
 
 .logo-span-footer {
@@ -438,46 +491,37 @@ section {
   color: var(--accent);
 }
 
-/* Соцсети */
-
-.social-networks-list {
+.exhortation {
   display: flex;
-  list-style: none;
-  height: 44px;
-  width: 206px;
-  padding: 0;
-  margin: 16px 32px 30px 32px;
+
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: var(--accent-secondary);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
 }
 
-.social-network:not(:last-child) {
-  margin-right: 10px;
+.join .social-networks-list {
+  margin: 0;
 }
 
-.social-network-link {
+.join .social-network-link {
   display: flex;
   justify-content: center;
   align-items: center;
   color: var(--accent-secondary);
   height: 44px;
   width: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
   background-size: contain;
   border-radius: 22px;
 }
 
-.social-network-link:visited {
-  color: var(--primary-icon-color);
-}
-
-.social-network-link:hover {
-  color: var(--accent-secondary);
+.join .social-network-link:hover,
+.join .social-network-link:focus {
   background-color: var(--accent);
-}
-
-.social-network-icon {
-  /* background-color: var(--primary-background-color); */
-  height: 20px;
-  width: 20px;
-  fill: currentColor;
 }
 
 /* Портфолио */
