@@ -347,7 +347,7 @@ section {
 }
 
 .team-item-text {
-  padding: 30px 0;
+  padding: 30px 0px 0px 0px;
 }
 
 .staff {
@@ -442,10 +442,11 @@ section {
 
 .social-networks-list {
   display: flex;
-}
-
-.social-network {
-  justify-content: center;
+  list-style: none;
+  height: 44px;
+  width: 206px;
+  padding: 0;
+  margin: 16px 32px 30px 32px;
 }
 
 .social-network:not(:last-child) {
@@ -453,7 +454,14 @@ section {
 }
 
 .social-network-link {
-  color: var(--primary-icon-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--accent-secondary);
+  height: 44px;
+  width: 44px;
+  background-size: contain;
+  border-radius: 22px;
 }
 
 .social-network-link:visited {
@@ -461,16 +469,14 @@ section {
 }
 
 .social-network-link:hover {
-  color: var(--accent);
+  color: var(--accent-secondary);
+  background-color: var(--accent);
 }
 
 .social-network-icon {
-  text-decoration: none;
-  width: 20px;
+  /* background-color: var(--primary-background-color); */
   height: 20px;
-  background-color: var(--primary-background-color);
-  background-size: contain;
-  border-radius: 22px;
+  width: 20px;
   fill: currentColor;
 }
 
