@@ -349,7 +349,7 @@ section {
 }
 
 .team-item-text {
-  padding: 30px 0px 0px 0px;
+  padding: 30px 0px 30px 0px;
 }
 
 .staff {
@@ -365,17 +365,14 @@ section {
   font-size: 16px;
   line-height: 1.2;
   text-align: Center;
+  margin-bottom: 16px;
 }
 
 /* Соцсети */
 
 .social-networks-list {
   display: flex;
-  list-style: none;
-  height: 44px;
-  width: 206px;
-  padding: 0;
-  margin: 16px 32px 30px 32px;
+  justify-content: center;
 }
 
 .social-network:not(:last-child) {
@@ -386,15 +383,15 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--accent-secondary);
+  /* color: var(--accent-secondary); */
+  color: var(--primary-icon-color);
   height: 44px;
   width: 44px;
   background-size: contain;
-  border-radius: 22px;
+  border-radius: 50%;
 }
 
 .social-network-link:visited {
-  color: var(--primary-icon-color);
 }
 
 .social-network-link:hover,
@@ -441,8 +438,8 @@ section {
   border-color: var(--accent);
 }
 
-.client-list-item .icon {
-  margin: 0;
+.client-icon {
+  fill: currentColor;
 }
 /* Футер */
 
