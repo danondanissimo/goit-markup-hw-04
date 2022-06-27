@@ -201,7 +201,7 @@ section {
   height: 600px;
   background-size: cover;
   background-repeat: no-repeat;
-  position: center;
+  background-position: center;
 }
 
 .hero-title {
@@ -296,10 +296,21 @@ section {
   margin: -15px;
 }
 
-.feature-icon {
-  width: 270px;
+.feature-icon-frame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 120px;
+  width: 270px;
+  background-color: var(--secondary-background-color);
+  border: 1px solid transparent;
+  border-radius: 4px;
   margin-bottom: 30px;
+}
+
+.feature-icon {
+  width: 70px;
+  height: 70px;
   fill: var(--primary-icon-color);
 }
 
@@ -387,7 +398,6 @@ section {
   color: var(--primary-icon-color);
   height: 44px;
   width: 44px;
-  background-size: contain;
   border-radius: 50%;
 }
 
@@ -440,6 +450,8 @@ section {
 
 .client-icon {
   fill: currentColor;
+  width: 106px;
+  height: 60px;
 }
 /* Футер */
 
@@ -515,7 +527,7 @@ section {
   width: 44px;
   background-color: rgba(255, 255, 255, 0.1);
   background-size: contain;
-  border-radius: 22px;
+  border-radius: 50%;
 }
 
 .join .social-network-link:hover,
